@@ -36,7 +36,19 @@ vim config.js
 ```
 API_END_POINT와 END_POINT 에 주소를 서버 주소 또는 도메인으로 수정
 API_END_POINT에는 꼭 주소 뒤에 /api 입력
-각 주소 입력부분 끝에 절대ㅗㄹ "/"를 넣지 않습니다.
+각 주소 입력부분 끝에 절대 "/"를 넣지 않습니다.
+```
+//예시
+//기존
+export const API_END_POINT = "http://3.16.111.90/api";
+export const END_POINT = "http://3.16.111.90";
+
+//변경후
+export const API_END_POINT = "http://www.fireban.kr/api";
+export const END_POINT = "http://www.fireban.kr";
+
+```
+
 저장 후,
 ```
 cd /home/webmaster/front
