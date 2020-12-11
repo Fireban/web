@@ -31,7 +31,7 @@ DEBUG = False
 
 PAGE_CONTENTS_NUM = 10
 
-ALLOWED_HOSTS = ['127.0.0.1', '.jodev.kr', 'localhost', '.fireban.kr']
+ALLOWED_HOSTS = ['*']
 # Application definition
 
 # set User Model
