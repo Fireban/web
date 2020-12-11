@@ -6,6 +6,7 @@ import Canvas from "./Canvas";
 import { makeStyles } from "@material-ui/core/styles";
 import DefaultCanvas from "./DefaultCanvas";
 import KakaoMap from "../KakaoMap/KakaoMap";
+import { END_POINT } from "../../lib/config";
 
 const styles = {
   cardCategoryWhite: {
@@ -66,7 +67,7 @@ function DetectImager({ targetImage, targetDetectInfo, onReload, targetKey, type
         <>
           <DetectImage
             id="target-img"
-            src={"http://www.fireban.kr/" + targetImage.path}
+	    src={END_POINT + "/" + targetImage.path}
             alt="detect"
             // onLoad={onImgLoad}
           ></DetectImage>

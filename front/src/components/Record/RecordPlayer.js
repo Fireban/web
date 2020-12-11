@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-
+import { END_POINT } from "../../lib/config";
 import ReactPlayer from "react-player";
 import { useDispatch, useSelector } from "react-redux";
 import { getTargetGps } from "../../store/modules/video";
@@ -56,8 +56,7 @@ function RecordPlayer({ streamUrl, targetInfo }) {
       setSecondsElapsed({ test });
     }
   };
-  const url = "http://www.fireban.kr" + streamUrl;
-
+  const url = END_POINT + streamUrl;
   return (
     <>
       <ReactPlayer

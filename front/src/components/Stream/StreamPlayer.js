@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { END_POINT } from "../../lib/config";
 import ReactPlayer from "react-player";
 
 function StreamPlayer({ streamUrl }) {
@@ -31,8 +31,7 @@ function StreamPlayer({ streamUrl }) {
       setSecondsElapsed({ test });
     }
   };
-  const url = "http://www.fireban.kr" + streamUrl;
-
+  const url = END_POINT + streamUrl;
   return (
     <>
       <ReactPlayer
