@@ -33,11 +33,14 @@ service gunicorn restart
 ```
 cd /home/webmaster/front/src/lib
 vim config.js
-#API_END_POINT와 END_POINT 에 주소를 서버 주소 또는 도메인으로 수정
-#API_END_POINT에는 꼭 주소 뒤에 /api 입력
-#각 주소 입력부분 끝에 절대ㅗㄹ "/"를 넣지 않습니다.
+```
+API_END_POINT와 END_POINT 에 주소를 서버 주소 또는 도메인으로 수정
+API_END_POINT에는 꼭 주소 뒤에 /api 입력
+각 주소 입력부분 끝에 절대ㅗㄹ "/"를 넣지 않습니다.
 저장 후,
+```
 cd /home/webmaster/front
+yarn add package
 yarn build -p
 //노드 버전 에러 뜰텐데 무시하시면 됩니다.
 ```
