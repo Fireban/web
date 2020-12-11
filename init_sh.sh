@@ -73,4 +73,3 @@ echo Y | sudo apt install node-gyp
 echo Y | sudo apt install npm
 npm install -g n
 n stable
-yarn add /home/webmaster/front/pagkage
