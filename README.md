@@ -63,3 +63,20 @@ yarn build -p
 service gunicorn restart
 // 꼭 서버 재식작시 실행해줘야 backend가 제대로 동작함.
 ```
+
+# KAKAO MAP API
+1. https://developers.kakao.com 접속
+2. 개발자 등록 및 앱생성
+3. 웹 플랫폼 추가: 앱 선택 -> 설정 -> 일반 -> 플랫폼추가 -> 웹 선택 후 추가
+4. 사이트 도메인 등록 (웹 플랫폼 선택), 사이트 도메인 등록 (ex> http://www.fireban.kr, http://123.456.789.123)
+5. 페이지 상단의 [JAVASCRIPT 키]를 지도 API의 appKey로 사용하니 복사
+```
+cd /home/webmaster/front/public
+vim index.html
+//33번째줄     src="//dapi.kakao.com/v2/maps/sdk.js?appkey=앱키입력&libraries=services"></script>
+```
+앱키 변경 후
+```
+cd /home/webmaster/front
+yarn build -p
+```
