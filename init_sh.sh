@@ -23,7 +23,7 @@ sudo ln -sf /usr/share/zoneinfo/Asia/Seoul /etc/localtime
 echo Y | sudo apt-get upgrade
 echo Y | sudo apt-get install python3-pip
 echo Y | sudo apt-get install nginx
-echo Y | sudo apt-get install libnginx-mod-rtmp
+echo Y | sudo apt-get install libnginx-mod-rtmp
 echo Y | apt-get install gunicorn
 sudo service nginx restart
 echo Y | sudo apt-get install mariadb-server
@@ -31,7 +31,8 @@ echo Y | sudo apt-get install libmysqlclient-dev
 echo Y | sudo apt-get install ffmpeg
 sudo curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-echo Y | sudo apt update && sudo apt install yarn
+echo Y | sudo apt update
+echo Y | sudo apt install yarn
 sudo mkdir /var/www/record
 sudo mkdir /var/www/record/tic
 sudo mkdir /var/www/record/stream
@@ -61,4 +62,15 @@ sudo mv ./stream /home/webmaster
 sudo mkdir /home/webmaster/fireban/run
 pip3 install gunicorn
 pip3 install Django gunicorn
+pip3 install mysqlclient
+pip3 install Cython
+echo Y | sudo apt-get install libtiff5-dev libjpeg8-dev zlib1g-dev libfreetype6-dev liblcms2-dev libwebp-dev tcl8.6-dev tk8.6-dev python-tk
+pip3 install -r /home/webmaster/fireban/requirement.txt
 sudo service gunicorn restart
+echo Y | sudo apt install libssl1.0-dev
+echo Y | sudo apt install nodejs-dev
+echo Y | sudo apt install node-gyp
+echo Y | sudo apt install npm
+npm install -g n
+n stable
+yarn add /home/webmaster/front/pagkage
