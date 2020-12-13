@@ -31,18 +31,26 @@ class DetectImageInfoDetail(APIView):
         closest_greater_qs = Location.objects.filter(target=targetProduct, updatedAt__gte=targetCreatedAt).order_by('updatedAt')
         closest_less_qs = Location.objects.filter(target=targetProduct, updatedAt__lte=targetCreatedAt).order_by('-updatedAt')
 
+        print(1)
         try:
             try:
+                print(closest_greater_qs)
                 closest_greater = closest_greater_qs[0]
             except IndexError:
-                serializer = LocationSerializer(closest_less_qs[0])
-                return Response({"message": defaultSerializer.data, "gps": serializer.data}, status=status.HTTP_200_OK)
-
+                print("less", closest_less_qs)
+                if not closest_less_qs:
+                    return Response({"message": defaultSerializer.data, "gps": "none"}, status=status.HTTP_200_OK)
+                else:
+                    serializer = LocationSerializer(closest_less_qs[0], null=True)
+                    return Response({"message": defaultSerializer.data, "gps": serializer.data}, status=status.HTTP_200_OK)
             try:
                 closest_less = closest_less_qs[0]
             except IndexError:
-                serializer = LocationSerializer(closest_greater_qs[0])
-                return Response({"message": defaultSerializer.data, "gps": serializer.data}, status=status.HTTP_200_OK)
+                if not closest_greater_qs:
+                    return Response({"message": defaultSerializer.data, "gps": "none"}, status=status.HTTP_200_OK)
+                else:
+                    serializer = LocationSerializer(closest_greater_qs[0])
+                    return Response({"message": defaultSerializer.data, "gps": serializer.data}, status=status.HTTP_200_OK)
         except IndexError:
             raise self.model.DoesNotExist("There is no closest object"
                                           " because there are no objects.")
