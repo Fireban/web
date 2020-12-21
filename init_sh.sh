@@ -29,6 +29,7 @@ sudo service nginx restart
 echo Y | sudo apt-get install mariadb-server
 echo Y | sudo apt-get install libmysqlclient-dev
 echo Y | sudo apt-get install ffmpeg
+echo Y | sudo apt-get install curl
 sudo curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 echo Y | sudo apt update
