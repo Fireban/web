@@ -79,7 +79,6 @@ export const END_POINT = "http://www.fireban.kr";
 cd /home/webmaster/front
 yarn add package
 yarn build -p
-//노드 버전 에러 뜰텐데 무시하시면 됩니다.
 ```
 
 
