@@ -7,10 +7,7 @@
 스트리밍과 비전 기술을 활용하여 저해상도 열화상 카메라 영상에서의 화재 조기 탐지 및 요구조자 수색 솔루션을 제공합니다. 열화상/실화상 스트리밍 및 녹화 영상과 GPS를 제공하며, 화재 또는 사람 탐지 시 해당 정보를 알려주고, 오탐 수정을 위한 라벨링 플랫폼을 제공합니다.
 
 
-<img width="364" alt="스크린샷 2020-12-31 오후 9 06 22" src="https://user-images.githubusercontent.com/20353124/103409954-7c7da800-4bac-11eb-9e23-e385e2944dee.png">
-
-
-![image1](https://user-images.githubusercontent.com/20353124/103409892-33c5ef00-4bac-11eb-8c8d-3ecb18f9f467.png)
+<img width="25%" alt="image1" src="https://user-images.githubusercontent.com/20353124/103409954-7c7da800-4bac-11eb-9e23-e385e2944dee.png"><img width="70%" alt="image2" src="https://user-images.githubusercontent.com/20353124/103409892-33c5ef00-4bac-11eb-8c8d-3ecb18f9f467.png">
 
 
 <a href="https://github.com/Fireban/web/tree/master/fireban" target="_blank">백엔드 ReadMe</a>
