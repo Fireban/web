@@ -13,7 +13,15 @@
 ![image1](https://user-images.githubusercontent.com/20353124/103409892-33c5ef00-4bac-11eb-8c8d-3ecb18f9f467.png)
 
 
+<a href="https://github.com/Fireban/web/tree/master/fireban" target="_blank">백엔드 ReadMe</a>
 
+<a href="https://github.com/Fireban/web/tree/master/front" target="_blank">프론트엔드 ReadMe</a>
+
+# 아키텍처
+<img width="981" alt="스크린샷 2020-12-31 오후 10 02 43" src="https://user-images.githubusercontent.com/20353124/103411557-02512180-4bb4-11eb-9539-dcae397bcec6.png">
+
+# SYSTEM FLOW
+<img width="1259" alt="스크린샷 2020-12-31 오후 10 02 53" src="https://user-images.githubusercontent.com/20353124/103411570-0c732000-4bb4-11eb-9fb0-e31e8946067c.png">
 
 # Serer Setup
 
